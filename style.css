@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: fontiburton;
+    src: url(/fontis/Skeina.otf);
+}
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+    background: bisque;
+    text-align: center;
+    font-size: 150%;
+    font-style: oblique;
+    color: white;
+    background-image: linear-gradient(bisque,chocolate);
+
+}
+header{
+    background: chocolate;
+    padding-top: 0.5px;
+}
+
+h1{
+    font-weight: 400%;
+    letter-spacing: 3px;
+    font-family: fontiburton;
+}
+
+.container{
+   height: 460px;
+   width: 800px;
+   overflow: hidden;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 7%;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.bar{
+    background-color: coral;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar:hover{
+    background-color: bisque;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 1.7s;
+} 
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+} 
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+
+
+}
